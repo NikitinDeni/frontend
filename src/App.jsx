@@ -1,0 +1,12 @@
+
+import HomePage from "./pages/hohepage";
+
+function App() {
+  return (
+    <div className="App">
+      <HomePage />
+    </div>
+  );
+}
+
+export default App;
