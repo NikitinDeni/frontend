@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import logo_1 from "../static/logo_1-round.ico"; 
 import logo_2 from "../static/logo_2-round.ico"; 
 
@@ -11,8 +11,8 @@ const NavBar = () =>
         <div className="navbar__wrapper"> 
             <img src = {logo_2} className="navbar__icon" />
             <div className ="navbar__buttons"> 
-                <a className = "navbar__link" href = {"#"} > Регистрация </a>
-                <a className = "navbar__link" href = {"#"} > Вход </a>
+                <Link to = {"reg"} className = "navbar__link"> Регистрация </Link>
+                <Link to = {"#"} className = "navbar__link" > Вход </Link>
             </div>
         
         </div>
