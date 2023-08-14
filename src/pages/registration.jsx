@@ -29,15 +29,16 @@ const RegPage = () =>
           alert(error);
         });
     });
-}
+  }
 
     return (
         <div className = "registration__wrapper">
             <div className = "form__wrapper"> 
                 <form className="registration"> 
                     <input placeholder = "почта" className="form__input" /> 
-                    <input placeholder="пароль" className="form__input" />
-                    <input placeholder="повторите пароль"  className="form__input"/> 
+                    <input placeholder = "логин" className="form__input" /> 
+                    <input placeholder= "пароль" className="form__input" />
+                    <input placeholder= "повторите пароль"  className="form__input"/> 
                 </form>
                 <button type="submit" className="submit__button"> Submit </button>
             </div>  

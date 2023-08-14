@@ -12,7 +12,7 @@ const NavBar = () =>
             <img src = {logo_2} className="navbar__icon" />
             <div className ="navbar__buttons"> 
                 <Link to = {"reg"} className = "navbar__link"> Регистрация </Link>
-                <Link to = {"#"} className = "navbar__link" > Вход </Link>
+                <Link to = {"signin"} className = "navbar__link" > Вход </Link>
             </div>
         
         </div>

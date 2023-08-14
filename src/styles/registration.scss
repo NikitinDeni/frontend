@@ -1,4 +1,9 @@
 
+:root 
+{
+    --color-gold: #ffd700;
+}
+
 .registration__wrapper
 {
     display: flex; 
@@ -10,7 +15,7 @@
 
 .form__wrapper
 {
-    background-color: white;
+    background-color: 0;
     display: grid;
     width: 40rem;
     height: 100vh;
@@ -21,4 +26,56 @@
 .form__input
 {
     display: block;
+    border: 2px solid gold;
+    padding: 10px;
+    margin-top: 1rem;
+    width: 20rem;
+    transition: 0.3s ease-in-out;
+    &:focus
+    {
+        width: 25rem;
+    }
+}
+
+
+
+
+.submit__button 
+{
+    display: inline;
+    padding: 10px;
+    background-color: gold;
+    color: #fff;
+    text-transform: uppercase;  
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: #ffdf00;
+      transition: width 0.5s;
+      z-index: -1;
+    }
+    
+    &:hover {
+      background-color: #ffdf00;
+      
+      &:after {
+        width: 100%;
+      }
+    }
+    
+    &:active {
+      box-shadow: 0 0 5px #ffdf00;
+    }
 }
