@@ -1,4 +1,8 @@
 
+:root 
+{
+    --color-gold: #FFD700
+}
 
 body 
 {
@@ -71,8 +75,58 @@ body
 {
     width: 70%;
     margin-left: 15%; 
-    color: #FFD700; 
+    color: gold; 
     font-size: 5rem;
     text-align: center;
     margin-top: 0;
+}
+
+
+.scroll__wrapper 
+{
+    width: 100%;
+    height: auto;
+    display: grid; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.scroll__card__wrapper
+{
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    border: 2px solid gold;
+    border-radius: 10%;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+
+.scroll__card__header
+{
+    color: gold; 
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+
+.scroll__card__text
+{
+    display: inline-block;
+    color: gold;
+    font-size: 1.8rem;  
+}
+
+.scroll__card__list
+{
+    display: block;
+    color: gold;
+    text-decoration: none;
+}
+
+.scroll__list__item 
+{
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
