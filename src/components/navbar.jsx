@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logo_1 from "../static/logo_1-round.ico"; 
 import logo_2 from "../static/logo_2-round.ico"; 
 
 

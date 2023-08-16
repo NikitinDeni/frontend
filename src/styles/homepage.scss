@@ -57,3 +57,22 @@ body
     height: 5rem;
     width: 5rem;
 }
+
+
+.maininfo__wrapper
+{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.maininfo__header
+{
+    width: 70%;
+    margin-left: 15%; 
+    color: #FFD700; 
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 0;
+}

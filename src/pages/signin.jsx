@@ -35,12 +35,13 @@ const SignIn = () =>
     return (
         <div className="signin__wrapper"> 
             <div className="signin__form"> 
-                <form className="registration"> 
+                <form className="signin"> 
                     <input placeholder = "логин или почта" className="form__input" /> 
                     <input placeholder="пароль" className="form__input" />
                 </form>
                 <button type="submit" className="submit__button"> Submit </button>
             </div>
+            
         </div>
 
     );
