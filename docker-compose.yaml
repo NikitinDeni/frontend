@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  app:
+    container_name: "app"
+    build: ./backend
+    restart: unless-stopped
+    command: ["sh", "-c", "alembic upgrade heads && uvicorn main:app --host 0.0.0.0"]
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    networks:
+      - backend_net
+
+  db:
+    container_name: "postgres"
+    image: postgres
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d db"]
+      interval: 10s
+      timeout: 1s
+      retries: 5
+      start_period: 10s
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "db"
+    networks:
+      - backend_net
+
+networks:
+  backend_net:
+    driver: bridge
