@@ -82,7 +82,7 @@ body
 }
 
 
-.scroll__wrapper 
+.scroll__wrapper
 {
     width: 100%;
     height: auto;
@@ -104,7 +104,25 @@ body
 }
 
 
-.scroll__card__header
+.scroll__card__header__it
+{
+    color: gold; 
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+.scroll__card__header__math
+{
+    color: gold; 
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+.scroll__card__header__phys
+{
+    color: gold; 
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+.scroll__card__header__lang
 {
     color: gold; 
     font-size: 5rem;

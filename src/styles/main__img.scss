@@ -19,14 +19,14 @@
 
 .img__button__1
 {
-    position: absolute;
-    width: 5rem;
-    height: 3rem;
     z-index: 2;
-    margin-top: 36.5rem;
-    margin-left: 26.4rem;
-    font-size: 1.5rem;
     text-align: center;
+    margin-top: 33.5rem;
+    margin-left: 58.5rem;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     display: inline-block;  
     padding: 10px 20px;
@@ -37,24 +37,26 @@
     text-transform: uppercase;
     box-shadow: 0 0 10px #FFD700;
     transition: all 0.3s ease;
+    transform: rotate(17deg);
 
     &:hover {
         background-color: #FFD700;
         box-shadow: 0 0 40px #FFD700;
         cursor: pointer;
       }
+
 }
 
 .img__button__2
 {
     position: absolute;
-    width: 7rem;
-    height: 3rem;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
     z-index: 2;
     margin-top: 34rem;
     margin-left: 15.5rem;
     font-size: 1.5rem;
-    text-align: center;
     text-decoration: none;
     display: inline-block;  
     padding: 10px 20px;
@@ -65,6 +67,7 @@
     text-transform: uppercase;
     box-shadow: 0 0 10px #FFD700;
     transition: all 0.3s ease;
+    transform: rotate(-10deg);
 
     &:hover {
         background-color: #FFD700;
@@ -72,16 +75,17 @@
         cursor: pointer;
       }
 }
+
 .img__button__3
 {
-    z-index: 2;
-    margin-top: 33.5rem;
-    margin-left: 58rem;
     position: absolute;
-    width: 7rem;
-    height: 3rem;
-    font-size: 1.5rem;
     text-align: center;
+    width: 5rem;
+    height: 2rem;
+    z-index: 2;
+    margin-top: 38.1rem;
+    margin-left: 26rem;
+    font-size: 1.5rem;
     text-decoration: none;
     display: inline-block;  
     padding: 10px 20px;
@@ -92,26 +96,26 @@
     text-transform: uppercase;
     box-shadow: 0 0 10px #FFD700;
     transition: all 0.3s ease;
+    transform: rotate(45deg);
 
     &:hover {
         background-color: #FFD700;
         box-shadow: 0 0 40px #FFD700;
         cursor: pointer;
       }
-
 }
 
 
 .img__button__4
 {
     z-index: 2;
-    margin-top: 14rem;
-    margin-left: 76.5rem;
-    position: absolute;
-    width: 7rem;
-    height: 3rem;
-    font-size: 1.5rem;
+    margin-top: 13.3rem;
     text-align: center;
+    margin-left: 75.8rem;
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     display: inline-block;  
     padding: 10px 20px;
@@ -122,6 +126,7 @@
     text-transform: uppercase;
     box-shadow: 0 0 10px #FFD700;
     transition: all 0.3s ease;
+    transform: rotate(15deg);
 
     &:hover {
         background-color: #FFD700;

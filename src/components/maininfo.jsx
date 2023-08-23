@@ -1,10 +1,59 @@
 
-
+import { Link } from "react-router-dom";
+import mainimg from "../static/octopus1.png";
 
 const MainInfo = () => 
 {
 
+    function HandleClick(way)
+    {
+            if (way === 'it')
+            {
+                const element = document.querySelector(".scroll__card__header__it");
+                console.log(element);
+                window.scroll({ 
+                    left: 0, 
+                    top: element.offsetTop - 50, 
+                    behavior: 'smooth' });
+            }
+            if (way === 'lang')
+            {
+                const element = document.querySelector(".scroll__card__header__lang");
+                console.log(element);
+                window.scroll({ 
+                    left: 0, 
+                    top: element.offsetTop - 50, 
+                    behavior: 'smooth' });
+            }
+            if (way === 'math')
+            {
+                const element = document.querySelector(".scroll__card__header__math");
+                console.log(element);
+                window.scroll({ 
+                    left: 0, 
+                    top: element.offsetTop - 50, 
+                    behavior: 'smooth' });
+            }
+            if (way === 'phys')
+            {
+                const element = document.querySelector(".scroll__card__header__phys");
+                console.log(element);
+                window.scroll({ 
+                    left: 0, 
+                    top: element.offsetTop - 50, 
+                    behavior: 'smooth' });
+            }
+    }
+
     return(
+    <div> 
+        <div className = "img__wrapper"> 
+            <img src = {mainimg} className="img__container"/>
+            <Link onClick = {() => HandleClick("it")}  className = "img__button__1"> IT </Link>
+            <Link onClick = {() => HandleClick("math")}  className = "img__button__2"> Math </Link>
+            <Link onClick = {() => HandleClick("phys")}  className = "img__button__3"> Phys </Link>
+            <Link onClick = {() => HandleClick("lang")}  className = "img__button__4"> Lang </Link>
+        </div>
         <div className="maininfo__wrapper"> 
             <div className = "maininfo__header__wrapper"> 
                 <p className="maininfo__header"> Allterra - комьюнити опытных в своих областях ребят, которые готовы помочь тебе с:</p>
@@ -16,7 +65,7 @@ const MainInfo = () =>
             <div className = "scroll__wrapper"> 
 
                 <div className = "scroll__card__wrapper"> 
-                    <p className = "scroll__card__header"> Айти отделение </p>
+                    <p className = "scroll__card__header__it"> Айти отделение </p>
                     <p className = "scroll__card__text"> 
                         В нашем IT отделе есть специалисты по:
                     </p>
@@ -29,7 +78,7 @@ const MainInfo = () =>
                 </div>
 
                 <div className = "scroll__card__wrapper"> 
-                    <p className = "scroll__card__header"> Математическое отделение </p>
+                    <p className = "scroll__card__header__math"> Математическое отделение </p>
                     <p className = "scroll__card__text"> 
                         В нашем математический отделе есть специалисты по:
                     </p>
@@ -42,7 +91,7 @@ const MainInfo = () =>
                 </div>
 
                 <div className = "scroll__card__wrapper"> 
-                    <p className = "scroll__card__header"> Физическое отделение </p>
+                    <p className = "scroll__card__header__phys"> Физическое отделение </p>
                     <p className = "scroll__card__text"> 
                         В нашем математический отделе есть специалисты по:
                     </p>
@@ -56,7 +105,7 @@ const MainInfo = () =>
 
 
                 <div className = "scroll__card__wrapper"> 
-                    <p className = "scroll__card__header"> Лингвистическое отделение </p>
+                    <p className = "scroll__card__header__lang"> Лингвистическое отделение </p>
                     <p className = "scroll__card__text"> 
                         В нашем лингвистическом отделе есть специалисты по:
                     </p>
@@ -70,6 +119,7 @@ const MainInfo = () =>
 
             </div>
         </div>
+    </div>
     );
 
 }
